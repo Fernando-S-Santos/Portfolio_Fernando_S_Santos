@@ -1,0 +1,151 @@
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 9vh;
+    margin: 15px 4px 0 4px;
+}
+
+.section__header {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    background-color: rgba(20, 20, 20, 0.90);
+    backdrop-filter: saturate(180%) blur(15px);
+    justify-content: space-between;
+    border-radius: 20px;
+    font: 400 1.2rem 'Raleway';
+    box-shadow: 1px 1px 20px rgba(2, 2, 2, 0.1);
+    border: 1px solid rgba(2, 2, 2, 0.1);
+}
+
+.chaves__title {
+    color: #ff1867;
+    font: 600 2rem 'Raleway';
+}
+
+.name__title {
+    color: #FFFFFF;
+    font: 300 1.6rem 'Raleway';
+    margin-left: 8px;
+}
+
+.name__title, .menu {
+    font-weight: 500;
+}
+
+.menu__inicial {
+    display: flex;
+}
+
+.menu__inicial--item {
+    margin: 10px;
+}
+
+.menu__inicial li{
+    list-style-type: none;
+}
+  
+.menu__inicial li> a{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.3s;
+    position: relative;
+}
+  
+.menu__inicial li> a:hover {
+      color: #ff1867;
+}
+
+.menu__inicial li> a::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      background-color: #ff1867;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      transition: 0.3s all;
+}
+
+.menu__inicial li> a:hover::after {
+      width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .section__header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .cabecalho {
+        margin-bottom: 15px;
+    }
+
+    .name__title,
+    .menu {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .menu__inicial {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu__inicial--item {
+        margin: 10px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .menu__inicial--item {
+        margin: 5px 0;
+    }
+
+    .menu__inicial li>a::after {
+        top: 16px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .section__header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .cabecalho {
+        margin-bottom: 15px;
+    }
+
+    .name__title,
+    .menu {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .menu__inicial {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu__inicial--item {
+        margin: 10px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .menu__inicial--item {
+        margin: 5px 0;
+        padding: 0 7px;
+    }
+
+    .menu__inicial li>a::after {
+        top: 16px;
+    }
+}

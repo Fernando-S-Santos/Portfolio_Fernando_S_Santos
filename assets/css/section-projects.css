@@ -1,0 +1,182 @@
+.section__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section__projects {
+    margin: 1rem 0 1rem 0;
+    padding: 2rem;
+    background-color: rgba(20, 20, 20, 0.90);
+    backdrop-filter: saturate(180%) blur(15px);
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.projects {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.project__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(39, 39, 40, 0.90);
+    backdrop-filter: saturate(180%) blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    margin: 22px 10px; /* Ajustado a margem */
+    padding: 2.5rem 0.6rem;
+    flex-basis: calc(33.33% - 20px); /* Ajustado a largura */
+}
+
+.project__box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px #ff1867;
+}
+
+.project__box img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__box img {
+    max-width: 340px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.project-title, .project-subtitle {
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+    text-align: center;
+}
+
+.project-title {
+    padding-top: 23px;
+}
+
+.project-subtitle {
+    padding-top: 14px;
+    font-weight: 300;
+}
+
+/* style - buttons */
+.project__description {
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+}
+
+.project__description span {
+    padding: 0.4rem;
+}
+
+.project__description button {
+    font: 500 1em/1 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 13px;
+}
+
+.project__repo, .project__demo {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 17px;
+    background: #333;
+    border: none;
+    color: #fff;
+}
+
+.project__repo:hover, .project__demo:hover {
+    letter-spacing: 0.25em;
+    background: #ff1867;
+    color: #ff1867;
+    box-shadow: 0 0 45px #ff1867;
+}
+
+.project__repo::before, .project__demo::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #222;
+}
+
+.project__repo button, .project__demo button {
+    position: relative;
+    z-index: 1;
+}
+
+.project__repo i, .project__demo i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.project__repo i::before, .project__demo i::before,
+.project__repo i::after, .project__demo i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #ff1867;
+    width: 7px;
+    height: 4px;
+    background: #222;
+    transition: 0.5s;
+}
+
+.project__repo i::before, .project__demo i::before {
+    top: -3.5px;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.project__repo:hover i::before, .project__demo:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+.project__repo i::after, .project__demo i::after {
+    bottom: -3.5px;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+.project__repo:hover i::after, .project__demo:hover i::after {
+    width: 20px;
+    left: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__box {
+        margin: 5px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__box {
+        padding: 30px;
+        margin: 10px;
+    }
+}

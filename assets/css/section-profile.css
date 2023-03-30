@@ -1,0 +1,145 @@
+.section__profile {
+    color: #ffffff;
+}
+
+.information__profile {
+    display: flex;
+    align-items: center;
+    margin: 25px 20px;
+}
+
+.foto__profile {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+}
+
+.foto__profile img {
+    max-width: 100%;
+}
+
+.conteudo__profile h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.conteudo__profile h3 {
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.conteudo__profile h2, h3 {
+    padding: 0.5rem 0;
+}
+
+.links__redes--sociais {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 0;
+}
+
+.links__redes--sociais li> a {
+    color: #ffffff;
+    transition: 0.3s;
+    position: relative;
+}
+
+.links__redes--sociais li> a:hover {
+    color: #ff1867;
+}
+
+.links__redes--sociais li> a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ff1867;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: 0.3s all;
+}
+
+.links__redes--sociais li> a:hover::after {
+    width: 100%;
+}
+
+.link__redes--item-1 a > i {
+    color: blue;
+}
+
+.link__redes--item-2 a > i {
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+}
+
+.link__redes--item-3 a > i {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .information__profile {
+        flex-direction: column;
+        margin: 25px 0;
+    }
+
+    .foto__profile {
+        width: 150px;
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      
+      .conteudo__profile h2 {
+        font-size: 24px;
+        line-height: 22px;
+      }
+      
+      .conteudo__profile h3 {
+        font-size: 20px;
+        line-height: 22px;
+      }
+      
+      .links__redes--sociais {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      
+      .links__redes--sociais li {
+        margin: 10px 0;
+        word-spacing: 2px;
+      }
+      
+      .links__redes--sociais li > a {
+        font-size: 16px;
+      }
+      
+      .link__redes--item-1 a > i {
+        color: red;
+      }
+      
+      .link__redes--item-2 a > i {
+        background: none;
+      }
+      
+      .link__redes--item-3 a > i {
+        color: blue;
+      }
+}
+
+@media screen and (max-width: 1365px) {
+    .conteudo__profile h2 {
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+}

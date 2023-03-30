@@ -1,0 +1,18 @@
+.sobre__mim {
+    padding: 1.5rem;
+    background-color: rgba(20, 20, 20, 0.90);
+    backdrop-filter: saturate(180%) blur(15px);
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.sobre__mim p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.3rem 0;
+    line-height: 25px;
+    text-align: justify;
+    word-spacing: 1.6px;
+}
+
