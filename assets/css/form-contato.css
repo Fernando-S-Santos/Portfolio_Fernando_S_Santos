@@ -167,3 +167,39 @@
     margin: 1.5rem 0 0 0;
 }
 
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0 10px;
+    }
+    .contato {
+        display: flex;
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    .img__left img {
+        display: flex;
+        justify-content: center;
+        padding-right: 50px;
+    }
+
+    .form {
+        align-items: center;
+    }
+
+    .form input {
+        border: transparent;
+        flex-grow: 1;
+        margin: 10px 0px;
+        height: 26px;
+        width: 50vw;
+    }
+
+    .form textarea {
+        border: transparent;
+        flex-grow: 1;
+        margin: 10px 0px;
+        height: 96px;
+        width: 50vw;
+    }
+}
