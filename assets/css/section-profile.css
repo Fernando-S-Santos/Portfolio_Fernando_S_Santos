@@ -125,7 +125,7 @@
       }
       
       .link__redes--item-1 a > i {
-        color: red;
+        color: blue;
       }
       
       .link__redes--item-2 a > i {
@@ -133,7 +133,7 @@
       }
       
       .link__redes--item-3 a > i {
-        color: blue;
+        color: red;
       }
 }
 
