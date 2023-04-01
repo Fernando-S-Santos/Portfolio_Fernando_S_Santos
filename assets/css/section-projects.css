@@ -54,6 +54,10 @@
     height: auto;
 }
 
+.info__project h2, .info__project h3{
+    line-height: 40px;
+}
+
 .project-title, .project-subtitle {
     font-family: 'Raleway', sans-serif;
     line-height: 25px;
