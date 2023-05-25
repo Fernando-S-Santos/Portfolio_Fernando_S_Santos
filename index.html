@@ -423,19 +423,19 @@
                         <form class="form" action="https://formspree.io/f/mwkjrvqd" method="POST">
                             <input type="hidden" name="_replyto" value="fernandossantos93@hotmail.com">
                             <div class="input__container">
-                                <input class="input" type="text" name="nome" id="nome" placeholder="Nome" data-tipo="nome" required>
+                                <input class="input" type="text" name="nome" id="nome" placeholder="Nome" data-tipo="nome" minlength="3" required>
                                 <span class="form__erro"></span>
                             </div>
                             <div class="input__container">
-                                <input class="input" type="email" name="email" id="email" placeholder="E-mail" data-tipo="email" required pattern="/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/">
+                                <input class="input" type="email" name="email" id="email" placeholder="E-mail" data-tipo="email" minlength="4" required pattern="/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/">
                                 <span class="form__erro"></span>
                             </div>
                             <div class="input__container">
-                                <input class="input" type="text" name="assunto" id="assunto" placeholder="Assunto" data-tipo="assunto" required>
+                                <input class="input" type="text" name="assunto" id="assunto" placeholder="Assunto" data-tipo="assunto" minlength="5" required>
                                 <span class="form__erro"></span>
                             </div>
                             <div class="input__container">
-                                <textarea class="input input-textarea" name="mensagem" id="mensagem" cols="40" rows="8" style="resize: none;" placeholder="Escreva sua mensagem" data-tipo="mensagem" required></textarea>
+                                <textarea class="input input-textarea" name="mensagem" id="mensagem" cols="40" rows="8" style="resize: none;" placeholder="Escreva sua mensagem" data-tipo="mensagem" minlength="50" maxlength="550" required></textarea>
                                 <span class="form__erro"></span>
                             </div>
                             <div class="button-enviar">
