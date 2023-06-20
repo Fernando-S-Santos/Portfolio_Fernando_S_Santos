@@ -54,7 +54,7 @@
     height: auto;
 }
 
-.course-title, .course-subtitle {
+.course-title, .course-subtitle, .course-description {
     font-family: 'Raleway', sans-serif;
     line-height: 25px;
     text-align: center;
@@ -68,6 +68,14 @@
     padding-top: 14px;
     font-size: 19px;
     font-weight: 700;
+    color: #ff1867;
+}
+
+.course-description a {
+    color: #ffffff;
+}
+
+.course-description a:hover {
     color: #ff1867;
 }
 

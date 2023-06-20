@@ -1,0 +1,88 @@
+.formations__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /*verificar e ajustar ainda*/
+}
+
+.formations__description {
+    margin: 2rem 0 3rem 0;
+    padding: 2rem;
+    background-color: rgba(20, 20, 20, 0.90);
+    backdrop-filter: saturate(180%) blur(15px);
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.title__description {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.subtitle__description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+    padding: 0.3rem 0;
+    word-spacing: 1.6px;
+}
+
+.courses__formations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.courses__box-formations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(39, 39, 40, 0.90);
+    backdrop-filter: saturate(180%) blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    margin: 15px 10px;
+    padding: 2.5rem 0.8rem;
+    width: 100%; /* Alterado para ocupar 100% da largura disponível */
+    max-width: 770px; /* Ajuste a largura máxima do elemento conforme desejado */
+}
+
+.title__description, .subtitle__description, .title__formations, .course__item {
+    font-family: 'Raleway', sans-serif;
+}
+
+.title__formations {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff1867;
+}
+
+.course__item {
+    font-style: italic;
+    font-weight: 600;
+    padding: 0.3rem 0;
+    line-height: 17px;
+    word-spacing: 1.6px;
+}
+
+.course__item::before {  /*style: símbolos da lista de cursos de cada formação*/
+    content: "\2756";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .formations__description {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .courses__box-formations {
+        margin: 10px;
+        flex-grow: 1;
+    }
+}
