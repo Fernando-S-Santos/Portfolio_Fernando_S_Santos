@@ -29,7 +29,7 @@
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #ffffff;
-    margin: 22px 0 22px 0;
+    margin: 22px 0;
     padding: 0.8rem;
     width: 156px;
     height: 118px;
@@ -47,6 +47,13 @@
 .hobbies--item {
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.hobbies__img {
+    display: flex;
+    justify-content: center;
+    padding: 3px 50px;
 }
 
 @media screen and (max-width: 768px) {
