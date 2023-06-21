@@ -72,6 +72,7 @@
     content: "\2756";
     display: inline-block;
     margin-right: 5px;
+    color: #ff1867;
 }
 
 @media screen and (max-width: 768px) {
